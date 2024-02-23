@@ -4,6 +4,7 @@
 
 先來講解最上面幾行
 
+![圖片載入失敗](https://github.com/lucasw0908/SchoolCodingHomework/blob/main/img/template.png?raw=true)
 
 ```cpp=
 #include<bits/stdc++.h>
