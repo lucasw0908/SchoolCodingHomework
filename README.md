@@ -23,7 +23,9 @@ using namespace std;
 ```cpp=
 #define fastio ios_base::sync_with_stdio(false), cin.tie(0), cout.tie(0);
 ```
-I/O優化，能讓你輸入輸出變快，不過這邊的題目基本上不會用到~~為啥這個OJ沒有top coder啦~~
+I/O優化，能讓你輸入輸出變快，不過這邊的題目基本上不會用到~~為啥這個OJ沒有top coder的機制啦~~
+ * 記得在`main()`裡面加上一行`fastio`才會有效果! (然後你會看到我的扣都沒加這行所以只是寫好看的XD)
+ * 跟`printf`、`scanf`會有衝突，如果使用了只能使用`cin`、`cout`。
 
 ```cpp=
 #define int long long
