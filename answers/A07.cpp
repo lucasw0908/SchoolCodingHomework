@@ -6,6 +6,6 @@ using namespace std;
 signed main() {
     string a;
     cin>>a;
-    if (a.length()==1) cout<<0;
-    else cout<<a[a.length()-2];
+    if (a.length()==1) cout<<0; //如果沒給十位數數字就當作0
+    else cout<<a[a.length()-2]; //輸出倒數第二個字元就是十位數
 }

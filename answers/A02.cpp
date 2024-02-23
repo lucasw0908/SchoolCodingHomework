@@ -4,5 +4,5 @@ using namespace std;
 
 signed main() {
 int a;cin>>a;
-cout<<"You are "<<a<<" years old.";
+cout<<"You are "<<a<<" years old."; //輸入帶有變數的寫法
 }

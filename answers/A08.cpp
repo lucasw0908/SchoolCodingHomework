@@ -6,8 +6,8 @@ using namespace std;
 signed main() {
     string a;
     cin>>a;
-    for (int i = a.length(); i > 0; i--)
+    for (int i = a.length(); i > 0; i--) //迴圈讓i從a的長度到0各跑一遍
     {
-        cout<<a[i-1]<<"\n";
+        cout<<a[i-1]<<"\n"; //輸出那一個位置的值(因為程式從0開始數，所以i要減1)
     }
 }

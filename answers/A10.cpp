@@ -5,5 +5,5 @@ using namespace std;
 
 signed main() {
     int a;cin>>a;
-    cout<<(a*2)%60*6;
+    cout<<(a*2)%60*6; //數學題自己推一下公式
 }

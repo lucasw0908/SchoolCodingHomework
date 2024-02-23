@@ -4,9 +4,9 @@ using namespace std;
 #define int long long
 
 signed main() {
-    int a, b, c, a2, b2, c2, ans;
-    cin>>a>>b>>c;
+    int a1, b1, c1, a2, b2, c2, ans;
+    cin>>a1>>b1>>c1;
     cin>>a2>>b2>>c2;
-    ans = abs((a*3600+b*60+c) - (a2*3600+b2*60+c2));
+    ans = abs((a1*3600+b1*60+c1) - (a2*3600+b2*60+c2)); //計算時間差值後取絕對值
     cout<<ans;
 }
