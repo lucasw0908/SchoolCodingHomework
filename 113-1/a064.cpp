@@ -10,9 +10,9 @@ signed main() {
     cin>>n;
     vector<int> v(n);
     for (int i=0; i<n; i++) cin>>v[i];
-    sort(all(v));
+    sort(all(v)); // 直接用內建排序就好
     for (auto &i: v) {cout<<i<<" ";} cout<<"\n";
-    for (int i=0; i<n; i++) {
+    for (int i=0; i<n; i++) { // 由小的抓上去第一個60分以上的就是最小及格者，而前一個就是最大不及格者
         if (v[i] >= 60) {
             a = v[i];
             if (i) b = v[i-1];

@@ -17,7 +17,7 @@ signed main() {
     if (t[2] < 0) t[2] = 24*3600 + t[2];
     for (int i=2; i>=0; i--) {
         while (t[2] >= pow(60, i)) t[2]-=pow(60, i), a[2-i]++;
-        ans[2-i]<<setw(2)<<setfill('0')<<a[2-i];
+        ans[2-i]<<setw(2)<<setfill('0')<<a[2-i]; // 補零
     }
     cout<<ans[0].str()<<":"<<ans[1].str()<<":"<<ans[2].str()<<"\n";
 }
