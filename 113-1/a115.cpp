@@ -1,5 +1,3 @@
-// AC 95%
-
 #include <bits/stdc++.h>
 using namespace std;
 #define fastio ios_base::sync_with_stdio(0);std::cin.tie(0);std::cout.tie(0);
@@ -28,7 +26,7 @@ void build() {
 
 int check(int i, int j) {
     int out=0;
-    if (vb[i][j]) return 0;
+    if (vb[i][j]) return -1;
     vb[i][j] = 1;
     for (int k=0; k<12; k++) {
         int c=0;
