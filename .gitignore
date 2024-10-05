@@ -36,3 +36,5 @@
 
 # Test
 test/
+test_input.txt
+test_output.txt
