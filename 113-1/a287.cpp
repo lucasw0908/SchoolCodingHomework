@@ -1,5 +1,3 @@
-// ACC 50% 測資目前看起來有點問題 先跳過
-
 #include <bits/stdc++.h>
 using namespace std;
 #define fastio ios_base::sync_with_stdio(0);std::cin.tie(0);std::cout.tie(0);
@@ -18,15 +16,19 @@ signed main() {
                 if (itmp == "0") break;
                 str=vs[vs.size()-stoi(itmp)];
                 ans+=str; itmp="";
+                if (find(all(vs), str) != vs.end()) vs.erase(find(all(vs), str));
+                vs.push_back(str);
+                str = "";
             }
             ans+=c;
         }
         if ((c>='A' && c<='Z') || (c>='a' && c<='z')) str+=c;
         else if (!str.empty()) {
-            if (find(all(vs), str) != vs.end()) vs.erase(find(all(vs), str));
             vs.push_back(str);
             str = "";
         }
     }
     cout<<ans;
 }
+
+// 基本上這題測資是有問題的
